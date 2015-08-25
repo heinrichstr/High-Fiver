@@ -1,0 +1,97 @@
+html, body, div, 
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font-weight: bold;
+	font: inherit;
+	vertical-align: baseline;
+} 
+/*END MEDIA QUERY*/
+
+#Container{
+    position: relative;
+    margin: 200px auto auto auto;
+    height:700px;
+    width:500px;
+}
+
+#Container h2{
+    text-align:center;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+    font-size:3em;
+}
+
+#Container #Fiver {
+    position: relative;
+    margin:120px auto auto auto;
+    height:5em;
+    width:4.5em;
+    cursor: -webkit-grab; 
+    cursor:-moz-grab;
+    cursor: grab;
+    font-size:4em;
+}
+
+#Container #Fiver:active {
+  padding-top:5px;
+}
+
+#Container #Fiver #spocker{
+    position:relative;
+    margin:auto;
+    transform: rotateZ(-15deg);
+}
+
+#Container #Texter {
+    position:absolute;
+    top:4em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height:1px;
+    width:300px;
+}
+
+#Container #Texter #textField{
+    position:absolute;
+    width:300px;
+    top:100px;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+    font-size:3em;
+    color:yellow;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(10deg);
+  }
+}
+
+#Container .rotateHand{
+    transform: rotateZ(30deg);
+    animation: rotate 2s infinite;
+    animation-direction: alternate;
+}
+
+#Container .rotate{
+    transform: rotateZ(10deg);
+    animation: rotate 1s infinite;
+    animation-direction: alternate;
+}
+
+#Slaps{
+    position: absolute;
+    top:-50px;
+    left:-20px;
+    font-size:1.5em;
+    color:yellow;
+}
